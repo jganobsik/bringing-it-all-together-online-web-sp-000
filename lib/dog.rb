@@ -27,7 +27,10 @@ end
     DB[:conn].execute(sql) 
   end
   
-  
+  def persisted?
+    
+    
+  end
   def save 
   persisted? ? update : insert
   end
