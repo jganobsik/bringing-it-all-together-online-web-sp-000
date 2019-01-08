@@ -29,7 +29,7 @@ end
   
   
   def save 
-  persisted? ? update 
+  persisted? ? update : insert
   end
   
   
