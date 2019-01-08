@@ -27,11 +27,7 @@ end
     DB[:conn].execute(sql) 
   end
   
-  
-  def save 
-  persisted? ? update : insert
-  end
-  
+
   
   def Dog.create(hash)
     new_dog = Dog.new(hash)
