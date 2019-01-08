@@ -27,9 +27,6 @@ end
     DB[:conn].execute(sql) 
   end
   
-  def persisted?
-    !!self.id
-  end
   
   def save 
   persisted? ? update : insert
